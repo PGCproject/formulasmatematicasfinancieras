@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Matemáticas Financieras</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="app-header">
+        <div>
+          <h1 data-i18n="title">
+            Calculadora de Matemáticas Financieras
+          </h1>
+          <p class="subtitle" data-i18n="subtitle">
+            Practica fórmulas de interés simple, valor presente, valor futuro y
+            descuento comercial - Made by PGC
+          </p>
+        </div>
+        <div class="header-controls">
+          <div class="lang-switcher">
+            <button
+              type="button"
+              class="lang-button active"
+              data-lang="es"
+              aria-pressed="true"
+            >
+              ES
+            </button>
+            <button
+              type="button"
+              class="lang-button"
+              data-lang="en"
+              aria-pressed="false"
+            >
+              EN
+            </button>
+          </div>
+          <div class="period-switcher">
+            <button
+              type="button"
+              class="period-button active"
+              data-period="monthly"
+              aria-pressed="true"
+            >
+              Mensual
+            </button>
+            <button
+              type="button"
+              class="period-button"
+              data-period="yearly"
+              aria-pressed="false"
+            >
+              Anual
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main class="card">
+        <section class="control-row">
+          <div class="field">
+            <label for="formula-select" data-i18n="formulaLabel">
+              Elige una fórmula
+            </label>
+            <select id="formula-select"></select>
+          </div>
+        </section>
+
+        <form id="calculator-form" class="form">
+          <div id="dynamic-inputs" class="grid-2"></div>
+
+          <div class="actions">
+            <button type="submit" class="primary" data-i18n="calculate">
+              Calcular
+            </button>
+            <button type="button" id="clear-button" class="secondary">
+              <span data-i18n="clear">Limpiar</span>
+            </button>
+          </div>
+        </form>
+
+        <section class="result-section">
+          <h2 data-i18n="resultTitle">Resultado</h2>
+          <div id="result-value" class="result-value">—</div>
+          <p id="result-formula" class="result-formula"></p>
+          <p id="result-explanation" class="result-explanation"></p>
+          <p id="error-message" class="error-message" aria-live="polite"></p>
+        </section>
+      </main>
+
+      <footer class="app-footer">
+        <p data-i18n="footerNote">
+          Esta herramienta es solo para fines educativos y utiliza interés
+          simple. Made by PGC
+        </p>
+      </footer>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
