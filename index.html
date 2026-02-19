@@ -14,8 +14,8 @@
             Calculadora de Matemáticas Financieras
           </h1>
           <p class="subtitle" data-i18n="subtitle">
-            Practica fórmulas de interés simple, valor presente, valor futuro y
-            descuento comercial - Made by PGC
+            Practica fórmulas de interés simple y compuesto, anualidades,
+            perpetuidades, CETES y tasas de interés - Made by PGC
           </p>
         </div>
         <div class="header-controls">
@@ -60,6 +60,72 @@
 
       <main class="card">
         <section class="control-row">
+          <div class="topic-switcher">
+            <button
+              type="button"
+              class="topic-button active"
+              data-topic="all"
+              aria-pressed="true"
+            >
+              Todos
+            </button>
+            <button
+              type="button"
+              class="topic-button"
+              data-topic="simple_interest"
+              aria-pressed="false"
+            >
+              Interés simple
+            </button>
+            <button
+              type="button"
+              class="topic-button"
+              data-topic="discount"
+              aria-pressed="false"
+            >
+              CETES / Descuentos
+            </button>
+            <button
+              type="button"
+              class="topic-button"
+              data-topic="compound_interest"
+              aria-pressed="false"
+            >
+              Interés compuesto
+            </button>
+            <button
+              type="button"
+              class="topic-button"
+              data-topic="annuities"
+              aria-pressed="false"
+            >
+              Anualidades
+            </button>
+            <button
+              type="button"
+              class="topic-button"
+              data-topic="deferred_annuities"
+              aria-pressed="false"
+            >
+              Anualidades diferidas
+            </button>
+            <button
+              type="button"
+              class="topic-button"
+              data-topic="perpetuities"
+              aria-pressed="false"
+            >
+              Perpetuidades
+            </button>
+            <button
+              type="button"
+              class="topic-button"
+              data-topic="rate_conversions"
+              aria-pressed="false"
+            >
+              Tasas de interés
+            </button>
+          </div>
           <div class="field">
             <label for="formula-select" data-i18n="formulaLabel">
               Elige una fórmula

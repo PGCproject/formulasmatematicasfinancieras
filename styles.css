@@ -63,7 +63,8 @@ body {
 }
 
 .lang-switcher,
-.period-switcher {
+.period-switcher,
+.topic-switcher {
   display: inline-flex;
   padding: 3px;
   background: rgba(15, 23, 42, 0.9);
@@ -73,7 +74,8 @@ body {
 }
 
 .lang-button,
-.period-button {
+.period-button,
+.topic-button {
   border: none;
   background: transparent;
   color: var(--text-muted);
@@ -85,14 +87,16 @@ body {
 }
 
 .lang-button.active,
-.period-button.active {
+.period-button.active,
+.topic-button.active {
   background: var(--accent);
   color: #0b1120;
   font-weight: 600;
 }
 
 .lang-button:active,
-.period-button:active {
+.period-button:active,
+.topic-button:active {
   transform: scale(0.96);
 }
 
@@ -111,6 +115,21 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  align-items: flex-end;
+}
+
+.topic-switcher {
+  flex: 1 1 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 6px;
+  margin-bottom: 4px;
+}
+
+.topic-button {
+  font-size: 0.78rem;
+  padding-inline: 10px;
 }
 
 .field {
